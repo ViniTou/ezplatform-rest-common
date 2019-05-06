@@ -9,13 +9,20 @@
             "eZ\\Publish\\Core\\REST\\Common\\": "src/lib"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "eZ\\Bundle\\EzPublishRestBundle\\Tests\\": "tests/bundle",
+            "eZ\\Publish\\Core\\REST\\Common\\Tests\\": "tests/lib"
+        }
+    },
     "require": {
         "php": ">=7.1",
         "ezsystems/ezpublish-kernel": "^7.5@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0",
-        "friendsofphp/php-cs-fixer": "~2.7.1"
+        "friendsofphp/php-cs-fixer": "~2.7.1",
+        "matthiasnoback/symfony-dependency-injection-test": "~3.0"
     },
     "scripts": {
         "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
