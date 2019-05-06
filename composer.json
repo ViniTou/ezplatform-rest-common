@@ -4,9 +4,9 @@
     "type": "ezplatform-bundle",
     "license": "GPL-2.0-only",
     "autoload": {
-        "psr-0": {
-            "eZ\\Bundle\\EzPublishRestBundle": "",
-            "eZ\\Publish\\Core\\REST\\Common": ""
+        "psr-4": {
+            "eZ\\Bundle\\EzPublishRestBundle\\": "src/bundle",
+            "eZ\\Publish\\Core\\REST\\Common\\": "src/lib"
         }
     },
     "require": {
