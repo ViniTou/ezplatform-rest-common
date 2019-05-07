@@ -1,9 +1,9 @@
 parameters:
-    ezpublish_rest.routing.options_loader.class: eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader
-    ezpublish_rest.routing.options_loader.route_collection_mapper.class: eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader\RouteCollectionMapper
-    ezpublish_rest.routing.options_loader.mapper.class: eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader\Mapper
+    ezpublish_rest.routing.options_loader.class: EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader
+    ezpublish_rest.routing.options_loader.route_collection_mapper.class: EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader\RouteCollectionMapper
+    ezpublish_rest.routing.options_loader.mapper.class: EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader\Mapper
 
-    ezpublish_rest.cors_options_provider.class: eZ\Bundle\EzPublishRestBundle\CorsOptions\RestProvider
+    ezpublish_rest.cors_options_provider.class: EzSystems\EzPlatformRestCommonBundle\CorsOptions\RestProvider
 
     ezpublish_rest.root_resource_builder.class: eZ\Publish\Core\REST\Server\Service\ExpressionRouterRootResourceBuilder
 
@@ -24,38 +24,38 @@ parameters:
     ezpublish_rest.controller.services.class: eZ\Publish\Core\REST\Server\Controller\Services
     ezpublish_rest.controller.views.class: eZ\Publish\Core\REST\Server\Controller\Views
 
-    ezpublish_rest.factory.class: eZ\Bundle\EzPublishRestBundle\ApiLoader\Factory
-    ezpublish_rest.request_parser.class: eZ\Bundle\EzPublishRestBundle\RequestParser\Router
-    ezpublish_rest.parser_tools.class: eZ\Publish\Core\REST\Common\Input\ParserTools
-    ezpublish_rest.field_type_parser.class: eZ\Publish\Core\REST\Common\Input\FieldTypeParser
-    ezpublish_rest.field_type_serializer.class: eZ\Publish\Core\REST\Common\Output\FieldTypeSerializer
+    ezpublish_rest.factory.class: EzSystems\EzPlatformRestCommonBundle\ApiLoader\Factory
+    ezpublish_rest.request_parser.class: EzSystems\EzPlatformRestCommonBundle\RequestParser\Router
+    ezpublish_rest.parser_tools.class: EzSystems\EzPlatformRestCommon\Input\ParserTools
+    ezpublish_rest.field_type_parser.class: EzSystems\EzPlatformRestCommon\Input\FieldTypeParser
+    ezpublish_rest.field_type_serializer.class: EzSystems\EzPlatformRestCommon\Output\FieldTypeSerializer
 
-    ezpublish_rest.request_listener.class: eZ\Bundle\EzPublishRestBundle\EventListener\RequestListener
-    ezpublish_rest.csrf_listener.class: eZ\Bundle\EzPublishRestBundle\EventListener\CsrfListener
-    ezpublish_rest.response_listener.class: eZ\Bundle\EzPublishRestBundle\EventListener\ResponseListener
+    ezpublish_rest.request_listener.class: EzSystems\EzPlatformRestCommonBundle\EventListener\RequestListener
+    ezpublish_rest.csrf_listener.class: EzSystems\EzPlatformRestCommonBundle\EventListener\CsrfListener
+    ezpublish_rest.response_listener.class: EzSystems\EzPlatformRestCommonBundle\EventListener\ResponseListener
 
-    ezpublish_rest.field_type_processor.ezauthor.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\AuthorProcessor
-    ezpublish_rest.field_type_processor_registry.class: eZ\Publish\Core\REST\Common\FieldTypeProcessorRegistry
-    ezpublish_rest.field_type_processor.ezimage.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\ImageProcessor
-    ezpublish_rest.field_type_processor.ezdatetime.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\DateAndTimeProcessor
-    ezpublish_rest.field_type_processor.ezdate.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\DateProcessor
-    ezpublish_rest.field_type_processor.ezmedia.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\MediaProcessor
-    ezpublish_rest.field_type_processor.ezobjectrelationlist.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\RelationListProcessor
-    ezpublish_rest.field_type_processor.ezobjectrelation.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\RelationProcessor
-    ezpublish_rest.field_type_processor.eztime.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\TimeProcessor
-    ezpublish_rest.field_type_processor.ezrichtext.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\RichTextProcessor
-    ezpublish_rest.field_type_processor.ezbinaryfile.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\BinaryProcessor
-    ezpublish_rest.field_type_processor.ezpage.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\PageProcessor
-    ezpublish_rest.field_type_processor.ezfloat.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\FloatProcessor
-    ezpublish_rest.field_type_processor.ezstring.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\StringProcessor
-    ezpublish_rest.field_type_processor.ezuser.class: eZ\Publish\Core\REST\Common\FieldTypeProcessor\UserProcessor
+    ezpublish_rest.field_type_processor.ezauthor.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\AuthorProcessor
+    ezpublish_rest.field_type_processor_registry.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessorRegistry
+    ezpublish_rest.field_type_processor.ezimage.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\ImageProcessor
+    ezpublish_rest.field_type_processor.ezdatetime.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\DateAndTimeProcessor
+    ezpublish_rest.field_type_processor.ezdate.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\DateProcessor
+    ezpublish_rest.field_type_processor.ezmedia.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\MediaProcessor
+    ezpublish_rest.field_type_processor.ezobjectrelationlist.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\RelationListProcessor
+    ezpublish_rest.field_type_processor.ezobjectrelation.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\RelationProcessor
+    ezpublish_rest.field_type_processor.eztime.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\TimeProcessor
+    ezpublish_rest.field_type_processor.ezrichtext.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\RichTextProcessor
+    ezpublish_rest.field_type_processor.ezbinaryfile.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\BinaryProcessor
+    ezpublish_rest.field_type_processor.ezpage.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\PageProcessor
+    ezpublish_rest.field_type_processor.ezfloat.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\FloatProcessor
+    ezpublish_rest.field_type_processor.ezstring.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\StringProcessor
+    ezpublish_rest.field_type_processor.ezuser.class: EzSystems\EzPlatformRestCommon\FieldTypeProcessor\UserProcessor
 
     ezpublish_rest.output.visitor.dispatcher.class: eZ\Publish\Core\REST\Server\View\AcceptHeaderVisitorDispatcher
-    ezpublish_rest.output.visitor.class: eZ\Publish\Core\REST\Common\Output\Visitor
-    ezpublish_rest.output.generator.json.class: eZ\Publish\Core\REST\Common\Output\Generator\Json
-    ezpublish_rest.output.generator.json.field_type_hash_generator.class: eZ\Publish\Core\REST\Common\Output\Generator\Json\FieldTypeHashGenerator
-    ezpublish_rest.output.generator.xml.class: eZ\Publish\Core\REST\Common\Output\Generator\Xml
-    ezpublish_rest.output.generator.xml.field_type_hash_generator.class: eZ\Publish\Core\REST\Common\Output\Generator\Xml\FieldTypeHashGenerator
+    ezpublish_rest.output.visitor.class: EzSystems\EzPlatformRestCommon\Output\Visitor
+    ezpublish_rest.output.generator.json.class: EzSystems\EzPlatformRestCommon\Output\Generator\Json
+    ezpublish_rest.output.generator.json.field_type_hash_generator.class: EzSystems\EzPlatformRestCommon\Output\Generator\Json\FieldTypeHashGenerator
+    ezpublish_rest.output.generator.xml.class: EzSystems\EzPlatformRestCommon\Output\Generator\Xml
+    ezpublish_rest.output.generator.xml.field_type_hash_generator.class: EzSystems\EzPlatformRestCommon\Output\Generator\Xml\FieldTypeHashGenerator
     ezpublish_rest.output.visitor.json.regexps:
         - '(^application/vnd\.ez\.api\.[A-Za-z]+\+json$)'
         - '(^application/json$)'
@@ -64,14 +64,14 @@ parameters:
         - '(^application/xml$)'
         - '(^.*/.*$)'
 
-    ezpublish_rest.output.value_object_visitor.dispatcher.class: eZ\Publish\Core\REST\Common\Output\ValueObjectVisitorDispatcher
+    ezpublish_rest.output.value_object_visitor.dispatcher.class: EzSystems\EzPlatformRestCommon\Output\ValueObjectVisitorDispatcher
     ezpublish_rest.output.value_object_visitor.Exception.InvalidArgumentException.class: eZ\Publish\Core\REST\Server\Output\ValueObjectVisitor\InvalidArgumentException
 
-    ezpublish_rest.input.dispatcher.class: eZ\Publish\Core\REST\Common\Input\Dispatcher
-    ezpublish_rest.input.parsing_dispatcher.class: eZ\Publish\Core\REST\Common\Input\ParsingDispatcher
+    ezpublish_rest.input.dispatcher.class: EzSystems\EzPlatformRestCommon\Input\Dispatcher
+    ezpublish_rest.input.parsing_dispatcher.class: EzSystems\EzPlatformRestCommon\Input\ParsingDispatcher
 
-    ezpublish_rest.input.handler.json.class: eZ\Publish\Core\REST\Common\Input\Handler\Json
-    ezpublish_rest.input.handler.xml.class: eZ\Publish\Core\REST\Common\Input\Handler\Xml
+    ezpublish_rest.input.handler.json.class: EzSystems\EzPlatformRestCommon\Input\Handler\Json
+    ezpublish_rest.input.handler.xml.class: EzSystems\EzPlatformRestCommon\Input\Handler\Xml
 
 services:
     ezpublish_rest.routing.options_loader:

@@ -6,10 +6,10 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Tests\RequestParser;
+namespace EzSystems\EzPlatformRestCommonBundle\Tests\RequestParser;
 
 use PHPUnit\Framework\TestCase;
-use eZ\Bundle\EzPublishRestBundle\RequestParser\Router as RouterRequestParser;
+use EzSystems\EzPlatformRestCommonBundle\RequestParser\Router as RouterRequestParser;
 use Symfony\Cmf\Component\Routing\ChainRouter;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
@@ -47,7 +47,7 @@ class RouterTest extends TestCase
     }
 
     /**
-     * @expectedException \eZ\Publish\Core\REST\Common\Exceptions\InvalidArgumentException
+     * @expectedException \EzSystems\EzPlatformRestCommon\Exceptions\InvalidArgumentException
      * @expectedExceptionMessage No route matched '/api/test/v1/nomatch'
      */
     public function testParseNoMatch()
@@ -64,7 +64,7 @@ class RouterTest extends TestCase
     }
 
     /**
-     * @expectedException \eZ\Publish\Core\REST\Common\Exceptions\InvalidArgumentException
+     * @expectedException \EzSystems\EzPlatformRestCommon\Exceptions\InvalidArgumentException
      * @expectedExceptionMessage No route matched '/no/prefix'
      */
     public function testParseNoPrefix()
@@ -99,7 +99,7 @@ class RouterTest extends TestCase
     }
 
     /**
-     * @expectedException \eZ\Publish\Core\REST\Common\Exceptions\InvalidArgumentException
+     * @expectedException \EzSystems\EzPlatformRestCommon\Exceptions\InvalidArgumentException
      * @expectedExceptionMessage No such attribute 'badAttribute' in route matched from /api/test/v1/content/no-attribute
      */
     public function testParseHrefAttributeNotFound()
@@ -138,7 +138,7 @@ class RouterTest extends TestCase
     }
 
     /**
-     * @return \eZ\Bundle\EzPublishRestBundle\RequestParser\Router
+     * @return \EzSystems\EzPlatformRestCommonBundle\RequestParser\Router
      */
     private function getRequestParser()
     {

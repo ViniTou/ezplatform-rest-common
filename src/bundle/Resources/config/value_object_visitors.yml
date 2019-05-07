@@ -1,6 +1,6 @@
 parameters:
-    ezpublish_rest.output.value_object_visitor.base.class: eZ\Publish\Core\REST\Common\Output\ValueObjectVisitor
-    ezpublish_rest.output.value_object_visitor.ContentObjectStates.class: eZ\Publish\Core\REST\Common\Output\ValueObjectVisitor\ContentObjectStates
+    ezpublish_rest.output.value_object_visitor.base.class: EzSystems\EzPlatformRestCommon\Output\ValueObjectVisitor
+    ezpublish_rest.output.value_object_visitor.ContentObjectStates.class: EzSystems\EzPlatformRestCommon\Output\ValueObjectVisitor\ContentObjectStates
 
     # Errors
     ezpublish_rest.output.value_object_visitor.InvalidArgumentException.class: eZ\Publish\Core\REST\Server\Output\ValueObjectVisitor\InvalidArgumentException
@@ -196,7 +196,7 @@ services:
         arguments: [ "%kernel.debug%", "@translator" ]
         tags:
             - { name: ezpublish_rest.output.value_object_visitor, type: eZ\Publish\Core\REST\Server\Exceptions\BadRequestException }
-            - { name: ezpublish_rest.output.value_object_visitor, type: eZ\Publish\Core\REST\Common\Exceptions\Parser }
+            - { name: ezpublish_rest.output.value_object_visitor, type: EzSystems\EzPlatformRestCommon\Exceptions\Parser }
 
     ezpublish_rest.output.value_object_visitor.ContentFieldValidationException:
         parent: ezpublish_rest.output.value_object_visitor.BadRequestException
@@ -736,7 +736,7 @@ services:
         parent: ezpublish_rest.output.value_object_visitor.base
         class: "%ezpublish_rest.output.value_object_visitor.RestObjectState.class%"
         tags:
-            - { name: ezpublish_rest.output.value_object_visitor, type: eZ\Publish\Core\REST\Common\Values\RestObjectState }
+            - { name: ezpublish_rest.output.value_object_visitor, type: EzSystems\EzPlatformRestCommon\Values\RestObjectState }
 
     ezpublish_rest.output.value_object_visitor.CreatedObjectState:
         parent: ezpublish_rest.output.value_object_visitor.base
@@ -754,7 +754,7 @@ services:
         parent: ezpublish_rest.output.value_object_visitor.base
         class: "%ezpublish_rest.output.value_object_visitor.ContentObjectStates.class%"
         tags:
-            - { name: ezpublish_rest.output.value_object_visitor, type: eZ\Publish\Core\REST\Common\Values\ContentObjectStates }
+            - { name: ezpublish_rest.output.value_object_visitor, type: EzSystems\EzPlatformRestCommon\Values\ContentObjectStates }
 
     ezpublish_rest.output.value_object_visitor.ObjectStateCreateStruct:
         parent: ezpublish_rest.output.value_object_visitor.base
@@ -816,7 +816,7 @@ services:
         parent: ezpublish_rest.output.value_object_visitor.base
         class: "%ezpublish_rest.output.value_object_visitor.Root.class%"
         tags:
-            - { name: ezpublish_rest.output.value_object_visitor, type: eZ\Publish\Core\REST\Common\Values\Root }
+            - { name: ezpublish_rest.output.value_object_visitor, type: EzSystems\EzPlatformRestCommon\Values\Root }
 
     ezpublish_rest.output.value_object_visitor.SeeOther:
         parent: ezpublish_rest.output.value_object_visitor.base

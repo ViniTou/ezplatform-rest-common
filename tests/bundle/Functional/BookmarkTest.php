@@ -6,9 +6,9 @@
  */
 declare(strict_types=1);
 
-namespace eZ\Bundle\EzPublishRestBundle\Tests\Functional;
+namespace EzSystems\EzPlatformRestCommonBundle\Tests\Functional;
 
-use eZ\Bundle\EzPublishRestBundle\Tests\Functional\TestCase as RESTFunctionalTestCase;
+use EzSystems\EzPlatformRestCommonBundle\Tests\Functional\TestCase as RESTFunctionalTestCase;
 use Symfony\Component\HttpFoundation\Response;
 
 class BookmarkTest extends RESTFunctionalTestCase

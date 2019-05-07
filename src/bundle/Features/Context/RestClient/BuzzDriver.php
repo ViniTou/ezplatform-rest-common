@@ -6,7 +6,7 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Features\Context\RestClient;
+namespace EzSystems\EzPlatformRestCommonBundle\Features\Context\RestClient;
 
 use Nyholm\Psr7\Request;
 use Buzz\Client\Curl;

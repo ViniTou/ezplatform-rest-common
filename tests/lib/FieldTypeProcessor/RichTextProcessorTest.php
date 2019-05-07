@@ -6,9 +6,9 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Tests\FieldTypeProcessor;
+namespace EzSystems\EzPlatformRestCommon\Tests\FieldTypeProcessor;
 
-use eZ\Publish\Core\REST\Common\FieldTypeProcessor\RichTextProcessor;
+use EzSystems\EzPlatformRestCommon\FieldTypeProcessor\RichTextProcessor;
 use eZ\Publish\Core\FieldType\RichText\Converter;
 use PHPUnit\Framework\TestCase;
 use DOMDocument;
@@ -59,7 +59,7 @@ EOT;
     protected $converter;
 
     /**
-     * @return \eZ\Publish\Core\REST\Common\FieldTypeProcessor\RichTextProcessor
+     * @return \EzSystems\EzPlatformRestCommon\FieldTypeProcessor\RichTextProcessor
      */
     protected function getProcessor()
     {

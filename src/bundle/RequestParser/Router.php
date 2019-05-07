@@ -6,13 +6,13 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\RequestParser;
+namespace EzSystems\EzPlatformRestCommonBundle\RequestParser;
 
-use eZ\Publish\Core\REST\Common\RequestParser;
+use EzSystems\EzPlatformRestCommon\RequestParser;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\RouterInterface;
-use eZ\Publish\Core\REST\Common\Exceptions\InvalidArgumentException;
+use EzSystems\EzPlatformRestCommon\Exceptions\InvalidArgumentException;
 
 /**
  * Router based request parser.
@@ -83,7 +83,7 @@ class Router implements RequestParser
      *
      * @param array $match Match array returned by Router::match() / Router::matchRequest()
      *
-     * @throws \eZ\Publish\Core\REST\Common\Exceptions\InvalidArgumentException if the \$match isn't valid
+     * @throws \EzSystems\EzPlatformRestCommon\Exceptions\InvalidArgumentException if the \$match isn't valid
      *
      * @return bool
      */

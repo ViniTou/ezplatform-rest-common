@@ -1,6 +1,6 @@
 parameters:
     ezpublish_rest.input.parser.class: eZ\Publish\Core\REST\Server\Common\Parser
-    ezpublish_rest.input.parser.ContentObjectStates.class: eZ\Publish\Core\REST\Common\Input\Parser\ContentObjectStates
+    ezpublish_rest.input.parser.ContentObjectStates.class: EzSystems\EzPlatformRestCommon\Input\Parser\ContentObjectStates
 
     # REST server
     ezpublish_rest.input.parser.ContentCreate.class: eZ\Publish\Core\REST\Server\Input\Parser\ContentCreate

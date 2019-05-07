@@ -6,7 +6,7 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Features\Context\RestClient;
+namespace EzSystems\EzPlatformRestCommonBundle\Features\Context\RestClient;
 
 use Guzzle\Http\Client;
 use Guzzle\Http\Message\Header;

@@ -6,9 +6,9 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Tests;
+namespace EzSystems\EzPlatformRestCommon\Tests;
 
-use eZ\Publish\Core\REST\Common;
+use EzSystems\EzPlatformRestCommon;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -21,7 +21,7 @@ class MessageTest extends TestCase
      */
     public function testCreateMessageDefaultHeaders()
     {
-        $message = new Common\Message();
+        $message = new EzPlatformRestCommon\Message();
 
         $this->assertSame(array(), $message->headers);
     }
@@ -31,7 +31,7 @@ class MessageTest extends TestCase
      */
     public function testCreateMessageDefaultBody()
     {
-        $message = new Common\Message();
+        $message = new EzPlatformRestCommon\Message();
 
         $this->assertSame('', $message->body);
     }
@@ -41,7 +41,7 @@ class MessageTest extends TestCase
      */
     public function testCreateMessageConstructorHeaders()
     {
-        $message = new Common\Message(
+        $message = new EzPlatformRestCommon\Message(
             $headers = array(
                 'Content-Type' => 'text/xml',
             )
@@ -55,7 +55,7 @@ class MessageTest extends TestCase
      */
     public function testCreateMessageConstructorBody()
     {
-        $message = new Common\Message(
+        $message = new EzPlatformRestCommon\Message(
             array(),
             'Hello world!'
         );

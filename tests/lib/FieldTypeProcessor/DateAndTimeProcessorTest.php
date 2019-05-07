@@ -6,9 +6,9 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Tests\FieldTypeProcessor;
+namespace EzSystems\EzPlatformRestCommon\Tests\FieldTypeProcessor;
 
-use eZ\Publish\Core\REST\Common\FieldTypeProcessor\DateAndTimeProcessor;
+use EzSystems\EzPlatformRestCommon\FieldTypeProcessor\DateAndTimeProcessor;
 use PHPUnit\Framework\TestCase;
 
 class DateAndTimeProcessorTest extends TestCase
@@ -33,7 +33,7 @@ class DateAndTimeProcessorTest extends TestCase
     }
 
     /**
-     * @covers \eZ\Publish\Core\REST\Common\FieldTypeProcessor\DateAndTimeProcessor::preProcessFieldSettingsHash
+     * @covers \EzSystems\EzPlatformRestCommon\FieldTypeProcessor\DateAndTimeProcessor::preProcessFieldSettingsHash
      * @dataProvider fieldSettingsHashes
      */
     public function testPreProcessFieldSettingsHash($inputSettings, $outputSettings)
@@ -47,7 +47,7 @@ class DateAndTimeProcessorTest extends TestCase
     }
 
     /**
-     * @covers \eZ\Publish\Core\REST\Common\FieldTypeProcessor\DateAndTimeProcessor::postProcessFieldSettingsHash
+     * @covers \EzSystems\EzPlatformRestCommon\FieldTypeProcessor\DateAndTimeProcessor::postProcessFieldSettingsHash
      * @dataProvider fieldSettingsHashes
      */
     public function testPostProcessFieldSettingsHash($outputSettings, $inputSettings)
@@ -61,7 +61,7 @@ class DateAndTimeProcessorTest extends TestCase
     }
 
     /**
-     * @return \eZ\Publish\Core\REST\Common\FieldTypeProcessor\DateAndTimeProcessor
+     * @return \EzSystems\EzPlatformRestCommon\FieldTypeProcessor\DateAndTimeProcessor
      */
     protected function getProcessor()
     {

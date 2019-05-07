@@ -1,10 +1,10 @@
 <?php
 
-namespace eZ\Bundle\EzPublishRestBundle\ApiLoader;
+namespace EzSystems\EzPlatformRestCommonBundle\ApiLoader;
 
 use eZ\Publish\Core\MVC\ConfigResolverInterface;
 use eZ\Publish\Core\MVC\Symfony\RequestStackAware;
-use eZ\Publish\Core\REST\Common\FieldTypeProcessor;
+use EzSystems\EzPlatformRestCommon\FieldTypeProcessor;
 use eZ\Publish\API\Repository\Repository;
 use Symfony\Component\Routing\RouterInterface;
 
@@ -50,7 +50,7 @@ class Factory
      *
      * @param \Symfony\Component\Routing\RouterInterface $router
      *
-     * @return \eZ\Publish\Core\REST\Common\FieldTypeProcessor\ImageProcessor
+     * @return \EzSystems\EzPlatformRestCommon\FieldTypeProcessor\ImageProcessor
      */
     public function getImageFieldTypeProcessor(RouterInterface $router)
     {

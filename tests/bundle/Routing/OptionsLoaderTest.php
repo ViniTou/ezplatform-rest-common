@@ -6,15 +6,15 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Tests\Routing;
+namespace EzSystems\EzPlatformRestCommonBundle\Tests\Routing;
 
-use eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader;
+use EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Routing\RouteCollection;
 
 /**
- * @covers \eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader
+ * @covers \EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader
  */
 class OptionsLoaderTest extends TestCase
 {

@@ -6,7 +6,7 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Output;
+namespace EzSystems\EzPlatformRestCommon\Output;
 
 use Symfony\Component\HttpFoundation\Response;
 
@@ -16,14 +16,14 @@ use Symfony\Component\HttpFoundation\Response;
 class Visitor
 {
     /**
-     * @var \eZ\Publish\Core\REST\Common\Output\ValueObjectVisitorDispatcher
+     * @var \EzSystems\EzPlatformRestCommon\Output\ValueObjectVisitorDispatcher
      */
     protected $valueObjectVisitorDispatcher = array();
 
     /**
      * Generator.
      *
-     * @var \eZ\Publish\Core\REST\Common\Output\Generator
+     * @var \EzSystems\EzPlatformRestCommon\Output\Generator
      */
     protected $generator;
 
@@ -44,8 +44,8 @@ class Visitor
     /**
      * Construct from Generator and an array of concrete view model visitors.
      *
-     * @param \eZ\Publish\Core\REST\Common\Output\Generator $generator
-     * @param \eZ\Publish\Core\REST\Common\Output\ValueObjectVisitorDispatcher $valueObjectVisitorDispatcher
+     * @param \EzSystems\EzPlatformRestCommon\Output\Generator $generator
+     * @param \EzSystems\EzPlatformRestCommon\Output\ValueObjectVisitorDispatcher $valueObjectVisitorDispatcher
      *
      * @internal param array $visitors
      */
@@ -145,7 +145,7 @@ class Visitor
      *
      * @param string $type
      *
-     * @see \eZ\Publish\Core\REST\Common\Generator::getMediaType()
+     * @see \EzSystems\EzPlatformRestCommon\Generator::getMediaType()
      *
      * @return string
      */

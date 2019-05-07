@@ -2,7 +2,7 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Features\Context;
+namespace EzSystems\EzPlatformRestCommonBundle\Features\Context;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
@@ -25,7 +25,7 @@ use PHPUnit\Framework\Assert as Assertion;
 
 class UserContentContext extends RawMinkContext implements Context, SnippetAcceptingContext, MinkAwareContext
 {
-    /** @var \eZ\Bundle\EzPublishRestBundle\Features\Context\RestContext */
+    /** @var \EzSystems\EzPlatformRestCommonBundle\Features\Context\RestContext */
     private $restContext;
 
     /** @var \eZ\Publish\API\Repository\ContentService */
@@ -60,7 +60,7 @@ class UserContentContext extends RawMinkContext implements Context, SnippetAccep
     public function gatherContexts(BeforeScenarioScope $scope)
     {
         $environment = $scope->getEnvironment();
-        $this->restContext = $environment->getContext('eZ\Bundle\EzPublishRestBundle\Features\Context\RestContext');
+        $this->restContext = $environment->getContext('EzSystems\EzPlatformRestCommonBundle\Features\Context\RestContext');
     }
 
     /**
@@ -178,7 +178,7 @@ class UserContentContext extends RawMinkContext implements Context, SnippetAccep
         // delete the user over HTTP as the user service will have inmemory cache
         $this->restContext->createAndSendRequest('get', '/user/users/' . $this->currentContent->id);
         Assertion::assertInstanceOf(
-            'eZ\Publish\Core\REST\Common\Exceptions\NotFoundException',
+            'EzSystems\EzPlatformRestCommon\Exceptions\NotFoundException',
             $object = $this->restContext->getResponseObject(),
             'The user the content referred to exists'
         );

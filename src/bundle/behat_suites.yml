@@ -3,11 +3,11 @@ rest:
         fullJson:
             paths: [ vendor/ezsystems/ezpublish-kernel/eZ/Bundle/EzPublishRestBundle/Features ]
             contexts:
-                - eZ\Bundle\EzPublishRestBundle\Features\Context\RestContext:
+                - EzSystems\EzPlatformRestCommonBundle\Features\Context\RestContext:
                     userFacade: '@ezbehatbundle.api.facade.userfacade'
                     driver: BuzzDriver
                     type: json
-                - eZ\Bundle\EzPublishRestBundle\Features\Context\UserContentContext:
+                - EzSystems\EzPlatformRestCommonBundle\Features\Context\UserContentContext:
                     contentService: "@ezpublish.api.service.content"
                     contentTypeService: "@ezpublish.api.service.content_type"
                     userService: "@ezpublish.api.service.user"
@@ -18,7 +18,7 @@ rest:
                     userFacade: '@ezbehatbundle.api.facade.userfacade'
                     driver: BuzzDriver
                     type: xml
-                - eZ\Bundle\EzPublishRestBundle\Features\Context\UserContentContext:
+                - EzSystems\EzPlatformRestCommonBundle\Features\Context\UserContentContext:
                     contentService: "@ezpublish.api.service.content"
                     contentTypeService: "@ezpublish.api.service.content_type"
                     userService: "@ezpublish.api.service.user"
@@ -26,11 +26,11 @@ rest:
         guzzle:
             paths: [ vendor/ezsystems/ezpublish-kernel/eZ/Bundle/EzPublishRestBundle/Features ]
             contexts:
-                - eZ\Bundle\EzPublishRestBundle\Features\Context\RestContext:
+                - EzSystems\EzPlatformRestCommonBundle\Features\Context\RestContext:
                     userFacade: '@ezbehatbundle.api.facade.userfacade'
                     driver: GuzzleDriver
                     type: json
-                - eZ\Bundle\EzPublishRestBundle\Features\Context\UserContentContext:
+                - EzSystems\EzPlatformRestCommonBundle\Features\Context\UserContentContext:
                     contentService: "@ezpublish.api.service.content"
                     contentTypeService: "@ezpublish.api.service.content_type"
                     userService: "@ezpublish.api.service.user"

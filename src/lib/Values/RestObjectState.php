@@ -6,10 +6,10 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Values;
+namespace EzSystems\EzPlatformRestCommon\Values;
 
 use eZ\Publish\API\Repository\Values\ObjectState\ObjectState;
-use eZ\Publish\Core\REST\Common\Value as RestValue;
+use EzSystems\EzPlatformRestCommon\Value as RestValue;
 
 /**
  * This class wraps the object state with added groupId property.

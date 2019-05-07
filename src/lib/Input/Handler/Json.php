@@ -6,10 +6,10 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Input\Handler;
+namespace EzSystems\EzPlatformRestCommon\Input\Handler;
 
-use eZ\Publish\Core\REST\Common\Input\Handler;
-use eZ\Publish\Core\REST\Common\Exceptions\Parser as ParserException;
+use EzSystems\EzPlatformRestCommon\Input\Handler;
+use EzSystems\EzPlatformRestCommon\Exceptions\Parser as ParserException;
 
 /**
  * Input format handler base class.
@@ -19,7 +19,7 @@ class Json extends Handler
     /**
      * Converts the given string to an array structure.
      *
-     * @throw eZ\Publish\Core\REST\Common\Exceptions\Parser
+     * @throw EzSystems\EzPlatformRestCommon\Exceptions\Parser
      *
      * @param string $string
      *

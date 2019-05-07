@@ -6,12 +6,12 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Features\Context\SubContext;
+namespace EzSystems\EzPlatformRestCommonBundle\Features\Context\SubContext;
 
 use eZ\Publish\Core\REST\Client\Values\ViewInput;
 use eZ\Publish\API\Repository\Values\ValueObject;
 use eZ\Publish\Core\REST\Server\Values\SessionInput;
-use eZ\Publish\Core\REST\Common\Message;
+use EzSystems\EzPlatformRestCommon\Message;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentException;
 use PHPUnit\Framework\Assert as Assertion;
 

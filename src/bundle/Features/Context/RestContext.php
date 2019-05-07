@@ -6,7 +6,7 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Features\Context;
+namespace EzSystems\EzPlatformRestCommonBundle\Features\Context;
 
 use Behat\Mink\Mink;
 use Behat\MinkExtension\Context\RawMinkContext;
@@ -46,7 +46,7 @@ class RestContext extends RawMinkContext
     /**
      * Rest driver for all requests and responses.
      *
-     * @var \eZ\Bundle\EzPublishRestBundle\Features\Context\RestClient\DriverInterface
+     * @var \EzSystems\EzPlatformRestCommonBundle\Features\Context\RestClient\DriverInterface
      */
     protected $restDriver;
 

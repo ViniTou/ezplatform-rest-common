@@ -6,9 +6,9 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Tests\Input\Handler;
+namespace EzSystems\EzPlatformRestCommon\Tests\Input\Handler;
 
-use eZ\Publish\Core\REST\Common;
+use EzSystems\EzPlatformRestCommon;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 class JsonTest extends TestCase
 {
     /**
-     * @expectedException \eZ\Publish\Core\REST\Common\Exceptions\Parser
+     * @expectedException \EzSystems\EzPlatformRestCommon\Exceptions\Parser
      */
     public function testConvertInvalidJson()
     {
@@ -69,6 +69,6 @@ class JsonTest extends TestCase
 
     protected function getHandler()
     {
-        return new Common\Input\Handler\Json();
+        return new EzPlatformRestCommon\Input\Handler\Json();
     }
 }

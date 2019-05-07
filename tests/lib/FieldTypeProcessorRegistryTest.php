@@ -6,10 +6,10 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Publish\Core\REST\Common\Tests;
+namespace EzSystems\EzPlatformRestCommon\Tests;
 
-use eZ\Publish\Core\REST\Common\FieldTypeProcessorRegistry;
-use eZ\Publish\Core\REST\Common\FieldTypeProcessor;
+use EzSystems\EzPlatformRestCommon\FieldTypeProcessorRegistry;
+use EzSystems\EzPlatformRestCommon\FieldTypeProcessor;
 use eZ\Publish\Core\REST\Server\Tests\BaseTest;
 
 class FieldTypeProcessorRegistryTest extends BaseTest
@@ -89,7 +89,7 @@ class FieldTypeProcessorRegistryTest extends BaseTest
     /**
      * Get FieldTypeProcessor mock object.
      *
-     * @return \eZ\Publish\Core\REST\Common\FieldTypeProcessor
+     * @return \EzSystems\EzPlatformRestCommon\FieldTypeProcessor
      */
     protected function getAProcessorMock()
     {

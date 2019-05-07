@@ -6,16 +6,16 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace eZ\Bundle\EzPublishRestBundle\Tests\Routing\OptionsLoader;
+namespace EzSystems\EzPlatformRestCommonBundle\Tests\Routing\OptionsLoader;
 
-use eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader\Mapper;
-use eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader\RouteCollectionMapper;
+use EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader\Mapper;
+use EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader\RouteCollectionMapper;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;
 
 /**
- * @covers \eZ\Bundle\EzPublishRestBundle\Routing\OptionsLoader\RouteCollectionMapper
+ * @covers \EzSystems\EzPlatformRestCommonBundle\Routing\OptionsLoader\RouteCollectionMapper
  */
 class RouteCollectionMapperTest extends TestCase
 {
